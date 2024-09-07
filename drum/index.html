@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>웹 드럼 머신</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="drum-machine">
+        <div id="controls">
+            <select id="time-signature">
+                <option value="4/4">4/4</option>
+                <option value="3/4">3/4</option>
+            </select>
+            <input type="number" id="bpm" min="60" max="200" value="120">
+            <select id="measures">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="4">4</option>
+                <option value="8">8</option>
+            </select>
+            <input type="file" id="sample-upload" accept=".wav,.mp3" multiple>
+        </div>
+        <div id="tracks-container"></div>
+        <div id="playback-controls">
+            <button id="play-pause">재생</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

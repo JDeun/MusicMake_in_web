@@ -1,0 +1,92 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f0f0f0;
+}
+
+#drum-machine {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+#controls {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+#controls select, #controls input {
+    padding: 5px;
+    font-size: 14px;
+}
+
+#tracks-container {
+    margin-bottom: 20px;
+}
+
+.track-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.track-name {
+    min-width: 100px;
+    font-size: 14px;
+    color: #333;
+    margin-right: 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.track {
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+}
+
+.beat {
+    width: 20px;
+    height: 20px;
+    border: 1px solid #ddd;
+    margin: 1px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.beat.active {
+    background-color: #4CAF50;
+}
+
+.beat-start {
+    border-left: 2px solid #999;
+}
+
+.measure-start {
+    border-left: 2px solid #333;
+}
+
+#playback-controls {
+    text-align: center;
+}
+
+#play-pause {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#play-pause:hover {
+    background-color: #45a049;
+}
